@@ -1,0 +1,102 @@
+@use "../../styles/partials/variables" as *;
+// @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/global" as *;
+
+.entire-services-page {background-color: rgb(246, 244, 230);}
+
+.services-title {
+  font-size: 100px;
+  font-family: "Source Code";
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  color: $teal;
+  margin-left: 250px;
+  width: 60%;
+}
+.services-sub-title {
+  display: flex;
+  justify-content: center;
+}
+.arrow-container {
+  display: flex;
+}
+.services-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  color: white;
+  align-items: center;
+  width: 100%;
+  margin: 10% auto;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  margin: 50px;
+  padding: 5px;
+  display: flex;
+}
+
+li {
+  margin: 15px;
+  height: 70%;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 20%;
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: all 0.8s linear;
+  box-shadow: 5px 5px 15px $dark-blue;
+
+  &:hover {
+    transform: rotateY(180deg);
+    box-shadow: -5px 5px 15px $dark-blue;
+  }
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.card-front {
+  img {
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.card-back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  color: $main-gray;
+  border-radius: 10px;
+}
+
+.arrow {
+  width: 40%;
+  margin-left: 80px;
+  margin-top: -80px;
+  margin-bottom: -350px;
+}

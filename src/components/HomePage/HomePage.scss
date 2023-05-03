@@ -1,0 +1,55 @@
+@use "../../styles/partials/variables" as *;
+// @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/global" as *;
+
+
+
+body {
+    background-color: $light-blue;
+    font-family: 'Source Code';
+  }
+  
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-img {width: 100%;
+    margin-top: -250px;
+    margin-bottom: -200px;
+}
+.hero-sub-title {color: $dark-blue;}
+// HERO TEXT FLY IN
+
+.hero-title{
+  width: 80%;
+  overflow: hidden;
+  color: $teal;
+  font-size: 100px;
+  white-space: nowrap;
+  border-right: 4px solid $dark-blue;
+  animation: printed-text 4s steps(21),
+             flashin-border .75s step-start infinite;
+}
+
+@keyframes flashin-border{
+  0%{
+    border-color: $dark-blue;
+  }
+  50%{
+    border-color: $dark-blue;
+  }
+  100%{
+    border-color: $dark-blue;
+  }
+}
+
+@keyframes printed-text{
+  from {
+    width: 0%;
+  }
+}

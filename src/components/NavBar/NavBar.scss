@@ -1,0 +1,154 @@
+@use "../../styles/partials/variables" as *;
+// @use "../../styles/partials/mixins" as *;
+// @use "../../styles/partials/typography" as *;
+@use "../../styles/partials/global" as *;
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $light-blue;
+    color: $main-gray;
+    height: 50px;
+    padding: 20px 20px 20px 20px;
+    font-size: 30px;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+
+  // BUTTON AREA 
+  .nav-contact-button {
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: $main-gray;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: #ffff;
+    border-radius: 10px;
+    height: 10%;
+  
+    &:hover {
+      border-left: 2px solid $dark-blue;
+      border-right: 2px solid $dark-blue;
+      border-top:2px solid $dark-blue ;
+      border-bottom:7px solid $dark-blue;
+
+    }
+  }
+
+  // SOCIAL MEDIA ICONS
+
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  padding-right: 30px;
+}
+
+.wrapper .icon-facebook {
+  position: relative;
+  background: $light-blue;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background-image: url(../../assets/icons/icons8-facebook-50.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper .icon-instagram {
+  position: relative;
+  background: $light-blue;
+  border-radius: 40%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background-image: url(../../assets/icons/icons8-instagram-50.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon-instagram:hover .tooltip {
+  top: -15px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon-facebook:hover .tooltip {
+  top: -15px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon-facebook:hover span,
+.wrapper .icon-facebook:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .icon-instagram:hover span,
+.wrapper .icon-instagram:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.065);
+}
+.wrapper .icon-facebook:hover,
+.wrapper .icon-facebook:hover .tooltip,
+.wrapper .icon-facebook:hover .tooltip::before {
+  background: $dark-blue;
+  color: #ffffff;
+}
+
+.wrapper .icon-instagram:hover,
+.wrapper .icon-instagram:hover .tooltip,
+.wrapper .icon-instagram:hover .tooltip::before {
+  background: $dark-blue;
+  color: #ffffff;
+}
+
+
+

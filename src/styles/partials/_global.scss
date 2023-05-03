@@ -1,0 +1,26 @@
+@use "../partials/variables" as *;
+// @use "../../styles/partials/mixins" as *;
+@use "../partials/typography" as *;
+
+
+
+body {
+    font-family: 'Source Code', sans-serif;
+    background-color: $light-blue;
+  }
+  h1 {
+    font-family: 'Source Code', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 102px;
+    color: $teal;
+    font-weight: 300;
+  }
+  
+  h2 {
+    font-family: 'Source Code', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+    
+  }
+  h3 {font-size: 30px;}
