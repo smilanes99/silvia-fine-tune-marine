@@ -5,8 +5,7 @@ import gear from '../../assets/images/gear.png'
 import light from '../../assets/images/LightBulb.png'
 import cables from '../../assets/images/wires.png'
 import speakers from '../../assets/images/speaker.png'
-import arrowLeft from '../../assets/icons/arrowLeft.png'
-import arrowRight from '../../assets/icons/arrowRight.png'
+
 
 
 function Services() {
@@ -14,15 +13,9 @@ function Services() {
     <div className='entire-services-page'>
     <div className='services-nav'>
     <h2 className='services-title'> SERVICES </h2>
-    <a href="/" class="nav-contact-button">
-    CONTACT ME
-    </a>
     </div>
     <p className='services-sub-title'>Hover over images for more details</p>
-    
-    
-   
-   
+ 
     <div className="services-container">
       <ul>
         <li>

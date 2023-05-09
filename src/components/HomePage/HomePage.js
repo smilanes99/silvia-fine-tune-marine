@@ -1,14 +1,20 @@
 import React from 'react';
-import Heroimage from '../../assets/images/3DBoatLines.png'
 import './HomePage.scss';
+import leftWaves from "../../assets/images/waves left.svg"
 
 function HomePage() {
   return (
     <section id="main">
       <div className="container">
-        <h1 className='hero-title'>MARINE TECHNICIAN</h1>
+        <div className='hero-text'>
+        <h1 className='hero-title'>MARINE<br></br> TECHNICIAN</h1>
         <h2 className='hero-sub-title'>EXPERT IN RIGGING, SOUND SYSTEMS &amp; LIGHTING </h2>
-        <img className="hero-img" src={Heroimage} alt="Boat Line Art" />
+        </div>
+        {/* <div className='left-corner'>
+        <img src={leftWaves} alt='Left corner blue waves'/>
+        </div> */}
+        <div className="hero-img">
+        </div>
       </div>
     </section>
   );

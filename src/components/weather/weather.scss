@@ -1,0 +1,53 @@
+@use "../../styles/partials/variables" as *;
+// @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/global" as *;
+
+.sun-pic {
+  width: 200px;
+  left: 180px;
+  margin-bottom: 330px;
+  position: absolute;
+}
+.weather-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  max-width: 600px;
+  padding: 80px;
+  margin-left: 800px;
+position: relative;
+bottom: 250px;
+  border-radius: 30px;
+  color: $main-blue;
+  font-family: "SourceSans", sans-serif;
+  font-size: 14px;
+
+  .location-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: $dark-blue;
+    margin-bottom: 30px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+  }
+
+  th {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    color: $main-blue;
+  }
+
+  td {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+  }
+}

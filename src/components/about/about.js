@@ -12,9 +12,9 @@ function About() {
 return (
     <div className="about-container">
       <div className="image-container">
-      <img src={bubble} alt="speech bubble" />
-          <p>This is the text that will appear from left to right.</p>
-        <img src={cartoon} alt="Cartoon Man" />
+      <img className='bubble' src={bubble} alt="speech bubble" />
+          <p className='bubble-text-english'>Hi! My name is Carlos</p>
+        <img className='cartoon' src={cartoon} alt="Cartoon Man" />
       </div>
       <div className="info-container">
         <h2>MEET THE OWNER</h2>

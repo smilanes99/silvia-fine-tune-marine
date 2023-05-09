@@ -1,75 +1,87 @@
-
 @use "../../styles/partials/variables" as *;
 // @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
 
-
-
+.cartoon {
+  max-width: 80%;
+  margin-top: -190px;
+}
+.bubble {
+  max-width: 70%;
+  margin-top: -90px;
+  
+}
+.bubble-text-english {overflow: hidden;
+  color: $main-blue;
+  position: relative;
+  bottom: 310px;
+  margin: 10px;
+  font-size: 36px;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-top: -20px;
+}
+  
+  
 .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    
-    .image-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 
-      
-      img {
-        max-width: 70%;
-        margin-top: -150px;
-      }
-      
-      .speech-bubble {
-        position: relative;
-        width: 200px;
-        height: 100px;
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .speech-bubble {
+      position: relative;
+      width: 200px;
+      height: 100px;
+      background-color: #ccc;
+      border-radius: 10px;
+      margin-top: 20px;
+      overflow: hidden;
+      transform: translateX(-100%);
+      transition: transform 0.5s ease-in-out;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        width: 30px;
+        height: 30px;
         background-color: #ccc;
-        border-radius: 10px;
-        margin-top: 20px;
-        overflow: hidden;
-        transform: translateX(-100%);
-        transition: transform 0.5s ease-in-out;
-        
-        &::before {
-          content: "";
-          position: absolute;
-          bottom: -20px;
-          left: 50%;
-          transform: translateX(-50%) rotate(45deg);
-          width: 30px;
-          height: 30px;
-          background-color: #ccc;
-        }
-        
-        &.show-text {
-          transform: translateX(0);
-        }
-        
-        p {
-          margin: 10px;
-          font-size: 14px;
-        }
       }
-    }
-    
-    .info-container {
-      padding: 0 20px;
-      max-width: 600px;
-      
-      h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
+
+      &.show-text {
+        transform: translateX(0);
       }
-      
+
       p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 20px;
+        margin: 10px;
+        font-size: 14px;
       }
     }
   }
+
+  .info-container {
+    padding: 0 20px;
+    max-width: 600px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+  }
+}

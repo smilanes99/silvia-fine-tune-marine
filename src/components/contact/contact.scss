@@ -3,50 +3,38 @@
 // @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $white;
-  color: $dark-blue;
-  height: 80px;
-  padding: 20px 20px 20px 20px;
-  font-size: 30px;
-}
 
-.nav-right {
-  display: flex;
-  align-items: center;
-}
 
-// BUTTON AREA
-.nav-contact-button {
-  
+.phone-number{
   text-decoration: none;
-  color: $dark-blue;
-  font-size: 24px;
-  font-weight: 700;
-  padding: 10px;
-  border-radius: 10px;
-  height: 10%;
-  margin-right: 30px;
-
-  &:hover {
-
-    border-left: 2px solid $light-green;
-    border-right: 2px solid $light-green;
-    border-top: 2px solid $light-green;
-    border-bottom: 2px solid $light-green;
-  }
+}
+.contact-page {
+    background-color: $white;
+}
+.contact-section-text
+{font-size: 20px;
+padding: 50px;}
+.contact-section {
+  font-family: "SourceSans";
+}
+.palm-tree {
+  width: 50%;
+  margin-left: 650px;
+  margin-top: -400px;
 }
 
-// SOCIAL MEDIA ICONS
+.contact-section-title {
+  display: flex;
+  justify-content: center;
+  color: $dark-blue;
+}
 
 .wrapper {
   display: inline-flex;
   list-style: none;
   padding-right: 30px;
 }
+
 .wrapper .icon-facebook {
   position: relative;
   background: $white;
@@ -90,8 +78,8 @@ nav {
   position: absolute;
   top: 0;
   font-size: 14px;
-  background: $white;
-  color: $white;
+  background: #ffffff;
+  color: #ffffff;
   padding: 5px 8px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -105,7 +93,7 @@ nav {
   content: "";
   height: 8px;
   width: 8px;
-  background: $white;
+  background: #ffffff;
   bottom: -3px;
   left: 50%;
   transform: translate(-50%) rotate(45deg);

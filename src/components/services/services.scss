@@ -3,24 +3,22 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
 
-.entire-services-page {background-color: rgb(246, 244, 230);}
+.entire-services-page {
+  background-color: $white;
+}
 
 .services-title {
   font-size: 100px;
-  font-family: "Source Code";
+  font-family: "SourceSans";
   display: flex;
   justify-content: center;
-  font-weight: 500;
-  color: $teal;
-  margin-left: 250px;
-  width: 60%;
+  font-weight: 600;
+  color: $main-blue;
+  width: 100%;
 }
 .services-sub-title {
   display: flex;
   justify-content: center;
-}
-.arrow-container {
-  display: flex;
 }
 .services-container {
   display: flex;
@@ -29,8 +27,12 @@
   color: white;
   align-items: center;
   width: 100%;
-  margin: 10% auto;
   position: relative;
+  margin: 50px;
+  margin-left: 50px;
+}
+.services-container::-webkit-scrollbar {
+  display: none;
 }
 
 ul {
@@ -56,13 +58,14 @@ li {
   position: relative;
   width: 300px;
   height: 300px;
+  margin: 20px;
   transform-style: preserve-3d;
   transition: all 0.8s linear;
-  box-shadow: 5px 5px 15px $dark-blue;
+  border-radius: 30px;
 
   &:hover {
     transform: rotateY(180deg);
-    box-shadow: -5px 5px 15px $dark-blue;
+    box-shadow: -5px 5px 15px -blue;
   }
 }
 
@@ -90,7 +93,7 @@ li {
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
-  color: $main-gray;
+  color: $dark-blue;
   border-radius: 10px;
 }
 

@@ -3,52 +3,69 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
 
-
-
 body {
-    background-color: $light-blue;
-    font-family: 'Source Code';
-  }
-  
-  .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero-img {width: 100%;
-    margin-top: -250px;
-    margin-bottom: -200px;
+  font-family: "SourceSans";
 }
-.hero-sub-title {color: $dark-blue;}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+ 
+}
+
+.hero-img {
+  background-size: cover;
+  padding: 700px;
+  padding-bottom: 300px;
+  bottom: 250px;
+  position: relative;
+  right: 450px;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  z-index: -1;
+  background-image: url("../../assets/images/blueboat.svg");
+  
+}
+
+.hero-sub-title {
+  color: $dark-blue;
+}
+.hero-text {
+  width: 90%;
+  height: 50vh;
+  z-index: 10;
+  margin-bottom: 290px;
+  margin-left: 20px;
+}
+
 // HERO TEXT FLY IN
 
-.hero-title{
-  width: 80%;
+.hero-title {
+  width: 100%;
   overflow: hidden;
-  color: $teal;
+  color: $main-blue;
   font-size: 100px;
   white-space: nowrap;
-  border-right: 4px solid $dark-blue;
-  animation: printed-text 4s steps(21),
-             flashin-border .75s step-start infinite;
+  border-right: 4px transparent;
+  animation: printed-text 4s steps(21), flashin-border 0.75s step-start infinite;
 }
 
-@keyframes flashin-border{
-  0%{
+@keyframes flashin-border {
+  0% {
     border-color: $dark-blue;
   }
-  50%{
+  50% {
     border-color: $dark-blue;
   }
-  100%{
+  100% {
     border-color: $dark-blue;
   }
 }
 
-@keyframes printed-text{
+@keyframes printed-text {
   from {
     width: 0%;
   }
