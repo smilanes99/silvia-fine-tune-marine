@@ -91,10 +91,11 @@ li {
   display: block;
   transform: rotateY(180deg);
   box-sizing: border-box;
-  padding: 10px;
   text-align: center;
   color: $dark-blue;
   border-radius: 10px;
+  padding: 60px;
+  padding-top: 80px;
 }
 
 .arrow {

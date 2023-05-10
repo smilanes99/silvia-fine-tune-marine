@@ -1,10 +1,10 @@
 import React from 'react';
 import './services.scss'; 
-import panel from '../../assets/images/ControlPanel.png'
-import gear from '../../assets/images/gear.png'
-import light from '../../assets/images/LightBulb.png'
-import cables from '../../assets/images/wires.png'
-import speakers from '../../assets/images/speaker.png'
+import panel from '../../assets/images/BluePanel.svg'
+import gear from '../../assets/images/CogAndWrench.svg'
+import light from '../../assets/images/BlueLightBulb.svg'
+import cables from '../../assets/images/BlueWires.svg'
+import speakers from '../../assets/images/BlueSpeakerIcon.svg'
 
 
 
@@ -24,7 +24,6 @@ function Services() {
               <img src={gear} alt="control panel" />
             </div>
             <div className="card-back">
-              <h3>MAINTENANCE</h3>
               <p> From routine maintenance to complete vessel upgrades, 
             we can provide you with the best service and advice to 
             ensure your boat is always in its optimum condition.</p>
@@ -37,7 +36,6 @@ function Services() {
               <img src={panel} alt="cog and wrench" />
             </div>
             <div className="card-back">
-                <h3>ACRYLIC  PANELS</h3>
               <p>From simple to complex designs, we'll make sure your panel is reliable and easy to use. Whether you're looking to replace
             an old panel or install a new one, we've got you covered.</p>
             </div>
@@ -49,7 +47,6 @@ function Services() {
               <img src={light} alt="light bulb" />
             </div>
             <div className="card-back">
-                <h3>LIGHTING</h3>
               <p>Light up your boat with our LED lighting systems. We can help design & install
             your new light system for your comfort and safety at night.</p>
             </div>
@@ -58,11 +55,10 @@ function Services() {
         <li>
           <div className="card">
             <div className="card-front">
-              <img src={cables} alt="electrical cable" />
+              <img src={cables} alt="electrical cable"/>
             </div>
             <div className="card-back">
-                <h3>YAMAHA RIGGING</h3>
-              <p>Our expert services ensure that your boat rigging 
+              <p>Our expert services ensure that your Yamaha boat rigging 
             is done right the first time. We specialize in custom rigging and installations.</p>
             </div>
           </div>
@@ -73,7 +69,6 @@ function Services() {
               <img src={speakers} alt="speaker" />
             </div>
             <div className="card-back">
-                <h3>SOUND SYSTEMS</h3>
               <p>With our top-notch sound systems. Whether you need to replace, 
                 repair or want to upgrade, we are here to help.</p>
             </div>
