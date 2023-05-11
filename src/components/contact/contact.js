@@ -1,7 +1,7 @@
 import React from 'react';
-import Palm from '../../assets/images/palmTree.png'
 import './contact.scss';
 import Weather from '../weather/weather';
+import Form from '../form/form';
 
 
 
@@ -9,13 +9,13 @@ function Contact() {
 
     return (
         <div className='contact-page'>
+           <h2 className='contact-section-title'>GET IN TOUCH </h2>
         <div className='contact-section'>
-        <h2 className='contact-section-title'>GET IN TOUCH FOR FINE-TUNED MARINE SERVICES</h2>
+       
         <div className='contact-section-text'>
         <p className='phone-number'>Phone:+1(305)-916-9321 </p>
-  <p>Address:We come to you! Serving Miami-Fort Lauderdale Area</p>
-  <p>Follow us on social media!</p>
-  </div>
+  <p>Address: We come to you!<br></br> Serving Miami-Fort Lauderdale Area</p>
+  <p><strong>Follow us on social media!</strong></p>
   <ul className="wrapper">
          <li className="icon-facebook">
          <span className="tooltip">Facebook</span>
@@ -27,9 +27,15 @@ function Contact() {
        </li>
        </ul>
        </div>
+       <div className='form-div'>
+       <Form/>
+       </div>
+       {/* <img className='left-tree' src={leftTree} alt='Palm tree Lines'/> */}
+       </div>
+       <div className='weather-div'>
        <Weather/>
-       {/* <img classNameNameName='palm-tree' src={Palm} alt='Palm tree Lines'/> */}
-        </div>
+       </div>
+      </div>
       );
     }
     

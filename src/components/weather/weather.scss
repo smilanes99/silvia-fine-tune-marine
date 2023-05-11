@@ -3,43 +3,56 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
 
-.sun-pic {
-  width: 200px;
 
-}
 .weather-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  color: $main-blue;
-  font-family: "SourceSans", sans-serif;
-  font-size: 14px;
+   
+    color: $white;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+   
 
+  }
+  
   .location-name {
-    font-size: 24px;
-    font-weight: 600;
-    color: $dark-blue;
-    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
-
+  
+  .forecast {
+    margin-bottom: 20px;
+  }
+  
+  .forecast > div {
+    margin-bottom: 5px;
+  }
+  
+  .sun-pic {
+    width: 80px;
+    height: 80px;
+  }
+  
   table {
+    margin-top: 20px;
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 15px;
+    border-collapse: collapse;
+  
+    td {
+      padding: 8px;
+      text-align: center;
+  
+      &:first-child {
+        text-align: left;
+      }
+  
+      &:last-child {
+        text-align: right;
+      }
+    }
   }
-
-  th {
-    font-size: 20px;
-    font-weight: 600;
-    text-align: left;
-    color: $main-blue;
-  }
-
-  td {
-    font-size: 20px;
-    font-weight: 400;
-    text-align: left;
-  }
-}
+  .date {font-size: 30px;
+    font-weight: 500;}

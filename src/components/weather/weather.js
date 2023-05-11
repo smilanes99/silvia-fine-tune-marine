@@ -8,62 +8,74 @@ const Weather = () => {
 
   const [weatherData, setWeatherData] = useState(null);
 
-  useEffect(() => {
-    fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`)
-      .then(response => response.json())
-      .then(jsonData => {
-        setWeatherData(jsonData);
-      })
-      .catch(error => {
-        console.error('Error fetching weather data:', error);
-      });
-  }, []);
-
-  const renderWeatherData = () => {
-    if (!weatherData) {
-      return <p>Loading weather data...</p>;
+  const getDaySuffix = (day) => {
+    if (day >= 11 && day <= 13) {
+      return "th";
     }
 
-    const currentData = weatherData.current;
-
-    return (
-        <>
-          <div className="location-name">{weatherData.location.name} Weather</div>
-          <img className="sun-pic" src={sun} alt='sun and clouds'/>
-          <table>
-            <tbody>
-              <tr>
-                <td>Temperature</td>
-                <td>{currentData.temp_f}</td>
-                <td>°F</td>
-              </tr>
-              <tr>
-                <td>Wind Speed</td>
-                <td>{currentData.wind_mph}</td>
-                <td>mph</td>
-              </tr>
-              <tr>
-                <td>Cloud</td>
-                <td>{currentData.cloud}</td>
-                <td>%</td>
-              </tr>
-              <tr>
-                <td>Gust</td>
-                <td>{currentData.gust_mph}</td>
-                <td>mph</td>
-              </tr>
-            </tbody>
-          </table>
-        </>
-      );
-    };
-  
-    return (
-      <div className="weather-box">
-        {renderWeatherData()}
-      </div>
-    );
+    const lastDigit = day % 10;
+    switch (lastDigit) {
+      case 1:
+        return "st";
+      case 2:
+        return "nd";
+      case 3:
+        return "rd";
+      default:
+        return "th";
+    }
   };
-  
-  export default Weather;
 
+  useEffect(() => {
+    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=5`)
+    .then(response => response.json())
+    .then(jsonData => {
+      setWeatherData(jsonData);
+    })
+    .catch(error => {
+      console.error('Error fetching weather data:', error);
+    });
+}, []);
+
+const renderWeatherData = () => {
+  if (!weatherData) {
+    return <p>Loading weather data...</p>;
+  }
+
+  const forecastData = weatherData.forecast.forecastday;
+
+  return (
+    <>
+      <div className="location-name">{weatherData.location.name}<br></br> Weather</div>
+      {forecastData.map((forecast, index) => {
+        const date = new Date(forecast.date);
+        const day = date.getDate();
+        const month = date.toLocaleString('en-US', {
+          month: 'long'
+        });
+        const daySuffix = getDaySuffix(day);
+          const formattedDate = `${month} ${day}${daySuffix}`;
+
+        return (
+          <div key={index} className="forecast">
+            <div className='date'>{formattedDate}</div>
+            <div>Temperature: {forecast.day.avgtemp_f}°F</div>
+            <div>Wind Speed: {forecast.day.maxwind_mph} mph</div>
+            <div>Rain {forecast.day.totalprecip_in} In</div>
+            <div>UV Index {forecast.day.uv} /11 </div>
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
+
+return (
+  <div className="weather-box">
+    {renderWeatherData()}
+  </div>
+);
+};
+
+export default Weather;

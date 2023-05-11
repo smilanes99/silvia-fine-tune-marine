@@ -10,6 +10,7 @@
   text-decoration: none;
   list-style: none;
   border: none;
+ 
 }
 
 .hero {
@@ -19,8 +20,10 @@
   align-items: center;
   width: 100%;
   height: 60vh;
+  background-color: $white;
+  z-index: -1;
 
-  &__cont {
+  &__content {
 
       display: flex;
       flex-direction: column;
@@ -29,7 +32,7 @@
       width: 100%;
   }
 
-  &__sec {
+  &__section {
       height: 100%;
       width: 100%;
       display: flex;
@@ -41,21 +44,22 @@
 
       &:last-of-type {
           flex-direction: column;
-          z-index: -1;
+         
       }
   }
 
-  .hero--text {
+  .hero-text {
       font-size: 20px;
-      width: 30%;
       padding: 16px 0px;
+      margin-bottom: 120px;
+      margin-left: 50px;
   }
 
   &__boat--img {
-      width: 800px;
+      width: 100%;
   }
 
-  &__bg {
+  &__background {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -63,17 +67,11 @@
       width: 100%; 
       contain: content;
 
-
-      &--img1 {
-          align-self: flex-end;
-        
-      }
-
       &--img2 {
           align-self: flex-start;
-          width: 600px;
-          margin-top: 500px;
-          margin-left: -145px;
+          width: 40rem;
+          margin-top: 361.5px;
+          margin-left: -155px;
       }
 
   }

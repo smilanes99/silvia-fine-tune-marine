@@ -3,46 +3,53 @@
 // @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
 
-
-
-.phone-number{
+.phone-number {
   text-decoration: none;
 }
 .contact-page {
-    background-color: $white;
+  background-color: $dark-blue;
+  color: $white;
+  background-image: url("../../assets/images/leftTree.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'SourceSans';
 }
-.contact-section-text
-{font-size: 20px;
-padding: 50px;}
+.contact-section-text {
+  font-size: 20px;
+  padding: 50px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.6;
+}
 .contact-section {
   font-family: "SourceSans";
-}
-.palm-tree {
-  width: 50%;
-  margin-left: 650px;
-  margin-top: -400px;
+  display:flex;
+  justify-content:space-evenly
 }
 
 .contact-section-title {
   display: flex;
   justify-content: center;
-  color: $dark-blue;
+  color: $white;
+  font-size: 60px;
+  font-weight: 400;
 }
 
 .wrapper {
   display: inline-flex;
   list-style: none;
   padding-right: 30px;
+  padding-top: 20px;
 }
 
 .wrapper .icon-facebook {
   position: relative;
   background: $white;
   border-radius: 50%;
-  margin: 10px;
-  width: 50px;
-  height: 50px;
-  font-size: 18px;
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,10 +65,10 @@ padding: 50px;}
   position: relative;
   background: $white;
   border-radius: 40%;
-  margin: 10px;
-  width: 50px;
-  height: 50px;
-  font-size: 18px;
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,13 +130,15 @@ padding: 50px;}
 .wrapper .icon-facebook:hover,
 .wrapper .icon-facebook:hover .tooltip,
 .wrapper .icon-facebook:hover .tooltip::before {
+  color: $dark-blue;
   background: $white;
-  color: #ffffff;
+  font-size: 18px;
 }
 
 .wrapper .icon-instagram:hover,
 .wrapper .icon-instagram:hover .tooltip,
 .wrapper .icon-instagram:hover .tooltip::before {
+  color: $dark-blue;
   background: $white;
-  color: #ffffff;
+  font-size: 18px;
 }

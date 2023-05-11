@@ -9,34 +9,35 @@ nav {
   align-items: center;
   background-color: $white;
   color: $dark-blue;
-  height: 80px;
-  padding: 20px 20px 20px 20px;
-  font-size: 30px;
+  height: 5rem;
+  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  font-size: 1.875rem;
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
 }
 
 .nav-right {
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 
 // BUTTON AREA
 .nav-contact-button {
-  
   text-decoration: none;
-  color: $dark-blue;
-  font-size: 24px;
+  color: $white;
+  font-size: 1.5rem;
   font-weight: 700;
-  padding: 10px;
-  border-radius: 10px;
-  height: 10%;
-  margin-right: 30px;
+  padding: .625rem;
+  border-radius: .625rem;
+  margin-right: 1.875rem;
+  background-color: $light-green;
 
   &:hover {
-
-    border-left: 2px solid $light-green;
-    border-right: 2px solid $light-green;
-    border-top: 2px solid $light-green;
-    border-bottom: 2px solid $light-green;
+    background-color:#2ab7756a ;
+    border-left: 2px solid $white;
+    border-right: 2px solid $white;
+    border-top: 2px solid $white;
+    border-bottom: 5px solid $white;
   }
 }
 

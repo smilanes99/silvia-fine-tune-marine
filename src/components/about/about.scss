@@ -4,7 +4,7 @@
 @use "../../styles/partials/global" as *;
 
 .cartoon {
-  max-width: 80%;
+  max-width: 100%;
   margin-top: -190px;
 }
 .bubble {
@@ -13,14 +13,15 @@
   
 }
 .bubble-text-english {overflow: hidden;
-  color: $main-blue;
+  color: $dark-blue;
   position: relative;
   bottom: 310px;
   margin: 10px;
-  font-size: 36px;
+  font-size: 46px;
   font-weight: 500;
   white-space: nowrap;
   margin-top: -20px;
+
 }
   
   
@@ -31,6 +32,9 @@
   height: 100%;
   background-color: $dark-blue;
   color: $white;
+  background-image: url("../../assets/images/rightTree.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 
   .image-container {
     display: flex;
@@ -72,16 +76,18 @@
   }
 
   .info-container {
-    padding: 0 20px;
-    max-width: 600px;
+    
+    padding-right: 80px;
+    max-width: 700px;
+   font-weight: 500;
 
     h2 {
-      font-size: 24px;
+      font-size: 40px;
       margin-bottom: 20px;
     }
 
     p {
-      font-size: 16px;
+      font-size: 24px;
       line-height: 1.5;
       margin-bottom: 20px;
     }
