@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "build",
+    "public": "build/fine-tune-marine",
     "ignore": [
       "firebase.json",
       "**/.*",
