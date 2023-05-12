@@ -1,7 +1,7 @@
 
 import React from 'react';
 import cartoon from '../../assets/images/fineTuneCartoon.png';
-import bubble from '../../assets/images/speechBubble-no-text.png'
+import bubble from '../../assets/images/speechBubble.svg'
 import './about.scss';
 
 
@@ -13,7 +13,6 @@ return (
     <div className="about-container">
       <div className="image-container">
       <img className='bubble' src={bubble} alt="speech bubble" />
-          <p className='bubble-text-english'>Hi, I'm Carlos !</p>
         <img className='cartoon' src={cartoon} alt="Cartoon Man" />
       </div>
       <div className="info-container">

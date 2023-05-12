@@ -1,13 +1,15 @@
 import React from "react";
 import "./HomePage.scss";
-import leftWaves from "../../assets/images/waves left.svg";
-import rightWaves from "../../assets/images/waves right2.svg";
+import leftWaves from "../../assets/images/bottomLeftWaves2.svg";
+// import rightWaves from "../../assets/images/waves right2.svg";
 import boatLines from '../../assets/images/heroboat.svg';
 
 function HomePage() {
   return (
     <section className="hero">
+      
             <div className="hero__content">
+            <img className="hero__background--img2" src={leftWaves} alt=" right blue corner waves" />
                 <div className="hero__section">
                     <div className="hero-text">
                         <h1 className="hero-title">MARINE TECHNICIAN</h1>
@@ -18,10 +20,7 @@ function HomePage() {
                     </div>
                 </div>
                 <div className="hero__section">
-                    <div className="hero__background">
-                      
-                        <img className="hero__background--img2" src={leftWaves} alt=" right blue corner waves" />
-                    </div>
+                  
                 </div>
             </div>
         </section>

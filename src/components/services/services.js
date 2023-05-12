@@ -5,12 +5,16 @@ import gear from '../../assets/images/CogAndWrench.svg'
 import light from '../../assets/images/BlueLightBulb.svg'
 import cables from '../../assets/images/BlueWires.svg'
 import speakers from '../../assets/images/BlueSpeakerIcon.svg'
+import topRightImage from '../../assets/images/topRightWaves.svg';
+import bottomLeftImage from '../../assets/images/bottomLeftWaves.svg';
 
 
 
 function Services() {
   return (
     <div className='entire-services-page'>
+      <img className="corner-image top-right" src={topRightImage} alt="Top Right Decoration" />
+      <img className="corner-image bottom-left" src={bottomLeftImage} alt="Bottom Left Decoration" />
     <div className='services-nav'>
     <h2 className='services-title'> SERVICES </h2>
     </div>
@@ -18,6 +22,7 @@ function Services() {
  
     <div className="services-container">
       <ul>
+      <div className='top-row-cards'>
         <li>
           <div className="card">
             <div className="card-front">
@@ -52,6 +57,8 @@ function Services() {
             </div>
           </div>
         </li>
+           </div>
+           <div className='bottom-row-cards'>
         <li>
           <div className="card">
             <div className="card-front">
@@ -74,7 +81,7 @@ function Services() {
             </div>
           </div>
         </li>
-    
+        </div>
       </ul>
     </div>
   </div>

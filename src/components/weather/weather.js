@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './weather.scss';
-import sun from "../../assets/images/sun+clouds.svg"
+
 
 const Weather = () => {
   const location = 'Miami,FL';

@@ -5,6 +5,7 @@
 
 .entire-services-page {
   background-color: $white;
+  position: relative;
 }
 
 .services-title {
@@ -15,46 +16,38 @@
   font-weight: 600;
   color: $main-blue;
   width: 100%;
+  
 }
 .services-sub-title {
   display: flex;
   justify-content: center;
 }
 .services-container {
+  justify-content: center;
   display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
   color: white;
   align-items: center;
   width: 100%;
-  position: relative;
-  margin: 50px;
-  margin-left: 50px;
-}
-.services-container::-webkit-scrollbar {
-  display: none;
+  
 }
 
 ul {
   list-style: none;
-  margin-top: 0;
-  margin-bottom: 70px;
-  padding: 5px;
-  display: flex;
 }
 
 li {
-  margin: 15px;
-  height: 70%;
-  scroll-snap-align: start;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 20%;
-  perspective: 1000px;
 }
-
+.top-row-cards {
+  display: flex;
+}
+.bottom-row-cards {
+  display: flex;
+  justify-content: center;
+}
 .card {
   position: relative;
   width: 350px;
@@ -100,9 +93,24 @@ li {
   font-size: 24px;
 }
 
-.arrow {
-  width: 40%;
-  margin-left: 80px;
-  margin-top: -80px;
-  margin-bottom: -350px;
+
+.corner-image {
+  position: absolute;
+  height: 30vh; 
 }
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
+
+

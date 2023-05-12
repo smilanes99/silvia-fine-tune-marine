@@ -10,7 +10,7 @@ nav {
   background-color: $white;
   color: $dark-blue;
   height: 5rem;
-  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  padding: 2.25rem 1.25rem 1.25rem 1.25rem;
   font-size: 1.875rem;
   box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
 }
@@ -25,7 +25,7 @@ nav {
 .nav-contact-button {
   text-decoration: none;
   color: $white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   padding: .625rem;
   border-radius: .625rem;
@@ -46,7 +46,7 @@ nav {
 .wrapper {
   display: inline-flex;
   list-style: none;
-  padding-right: 30px;
+  // padding-right: 30px;
 }
 .wrapper .icon-facebook {
   position: relative;
