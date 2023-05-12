@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "build/silvia-fine-tune-marine",
+    "public": "dist/fine-tune-marine",
     "ignore": [
       "firebase.json",
       "**/.*",
