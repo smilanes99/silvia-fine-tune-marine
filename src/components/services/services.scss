@@ -1,5 +1,5 @@
 @use "../../styles/partials/variables" as *;
-// @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
 
@@ -16,6 +16,8 @@
   font-weight: 600;
   color: $main-blue;
   width: 100%;
+  padding-top: 50px;
+  @include mobile {font-size: 50px;}
   
 }
 .services-sub-title {
@@ -28,6 +30,7 @@
   color: white;
   align-items: center;
   width: 100%;
+  @include mobile {margin-top: 30px;}
   
 }
 
@@ -43,24 +46,33 @@ li {
 }
 .top-row-cards {
   display: flex;
+  @include tablet-landscape {flex-direction: column;}
 }
 .bottom-row-cards {
   display: flex;
   justify-content: center;
+  @include tablet-landscape{flex-direction: column;
+    padding-bottom: 80px;}
 }
 .card {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 340px;
+  height: 340px;
   margin: 10px;
   transform-style: preserve-3d;
   transition: all 0.8s linear;
   border-radius: 30px;
+  
+  
 
   &:hover {
     transform: rotateY(180deg);
     box-shadow: -5px 5px 15px -blue;
   }
+  @include tablet-landscape {width:300px;
+  height: 250px;}
+  @include desktop-small {width:320px}
+ 
 }
 
 .card-front,
@@ -91,12 +103,14 @@ li {
   padding: 20px;
   padding-top: 100px;
   font-size: 24px;
+  @include tablet-landscape {padding-top: 0;}
 }
 
 
 .corner-image {
   position: absolute;
-  height: 30vh; 
+  height: 40vh; 
+  @include tablet-portrait {  height:35vh;}
 }
 
 .top-right {

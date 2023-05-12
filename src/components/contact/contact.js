@@ -30,8 +30,9 @@ function Contact() {
        <div className='form-div'>
        <Form/>
        </div>
-       {/* <img className='left-tree' src={leftTree} alt='Palm tree Lines'/> */}
        </div>
+       <div className='weather-title'>Plan ahead for smooth sailing or repairs!</div>
+       <div className='location-title'> Miami Forecast</div>
        <div className='weather-div'>
        <Weather/>
        </div>

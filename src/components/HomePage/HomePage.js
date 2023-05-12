@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomePage.scss";
 import leftWaves from "../../assets/images/bottomLeftWaves2.svg";
-// import rightWaves from "../../assets/images/waves right2.svg";
+import rightWaves from "../../assets/images/topRightWaves2.svg";
 import boatLines from '../../assets/images/heroboat.svg';
 
 function HomePage() {
@@ -9,7 +9,9 @@ function HomePage() {
     <section className="hero">
       
             <div className="hero__content">
-            <img className="hero__background--img2" src={leftWaves} alt=" right blue corner waves" />
+            <img className="hero__background--img2" src={rightWaves} alt=" right blue corner waves" />
+            <img className="hero__background--img1" src={leftWaves} alt=" left blue corner waves" />
+            
                 <div className="hero__section">
                     <div className="hero-text">
                         <h1 className="hero-title">MARINE TECHNICIAN</h1>

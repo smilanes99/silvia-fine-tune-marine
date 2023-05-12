@@ -1,6 +1,6 @@
 @use "../../styles/partials/variables" as *;
-// @use "../../styles/partials/mixins" as *;
-// @use "../../styles/partials/typography" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
 
 .phone-number {
@@ -13,6 +13,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   font-family: 'SourceSans';
+  @include mobile {background-repeat: repeat;}
+
 }
 .contact-section-text {
   font-size: 20px;
@@ -20,11 +22,13 @@
   font-size: 30px;
   font-weight: 500;
   line-height: 1.6;
+  @include mobile {padding:20px}
 }
 .contact-section {
   font-family: "SourceSans";
   display:flex;
-  justify-content:space-evenly
+  justify-content:space-evenly;
+  @include mobile {flex-direction:column ;}
 }
 
 .contact-section-title {
@@ -60,6 +64,9 @@
   background-image: url(../../assets/icons/icons8-facebook-50.png);
   background-repeat: no-repeat;
   background-size: cover;
+   @include mobile {width: 20px;
+    height: 20px;
+    margin: 0;}
 }
 .wrapper .icon-instagram {
   position: relative;
@@ -79,6 +86,9 @@
   background-image: url(../../assets/icons/icons8-instagram-50.png);
   background-repeat: no-repeat;
   background-size: cover;
+  @include mobile {width: 20px;
+    height: 20px;
+  margin: 0;}
 }
 
 .wrapper .tooltip {
@@ -141,4 +151,18 @@
   color: $dark-blue;
   background: $white;
   font-size: 18px;
+}
+.weather-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.location-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }

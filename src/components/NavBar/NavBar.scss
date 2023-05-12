@@ -1,5 +1,5 @@
 @use "../../styles/partials/variables" as *;
-// @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/mixins" as *;
 // @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
 
@@ -13,6 +13,7 @@ nav {
   padding: 2.25rem 1.25rem 1.25rem 1.25rem;
   font-size: 1.875rem;
   box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+  @include tablet-portrait {padding: 0.25rem 1.25rem 0.25rem 1.25rem;}
 }
 
 .nav-right {
@@ -31,6 +32,9 @@ nav {
   border-radius: .625rem;
   margin-right: 1.875rem;
   background-color: $light-green;
+  @include mobile {font-size: 1rem;
+    padding: 0.3rem;
+  font-weight: 500;}
 
   &:hover {
     background-color:#2ab7756a ;
@@ -46,7 +50,7 @@ nav {
 .wrapper {
   display: inline-flex;
   list-style: none;
-  // padding-right: 30px;
+  
 }
 .wrapper .icon-facebook {
   position: relative;
@@ -66,6 +70,9 @@ nav {
   background-image: url(../../assets/icons/icons8-facebook-50.png);
   background-repeat: no-repeat;
   background-size: cover;
+  @include mobile {width: 20px;
+    height: 20px;
+    margin: 0;}
 }
 .wrapper .icon-instagram {
   position: relative;
@@ -85,6 +92,9 @@ nav {
   background-image: url(../../assets/icons/icons8-instagram-50.png);
   background-repeat: no-repeat;
   background-size: cover;
+  @include mobile {width: 20px;
+    height: 20px;
+    margin: 0;}
 }
 
 .wrapper .tooltip {

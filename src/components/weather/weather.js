@@ -3,7 +3,6 @@ import './weather.scss';
 
 
 const Weather = () => {
-  const location = 'Miami,FL';
   const apiKey = 'b0e878a115654f93b0c192141230805';
 
   const [weatherData, setWeatherData] = useState(null);
@@ -27,7 +26,7 @@ const Weather = () => {
   };
 
   useEffect(() => {
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=5`)
+    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=33130&days=5`)
     .then(response => response.json())
     .then(jsonData => {
       setWeatherData(jsonData);
@@ -45,8 +44,10 @@ const renderWeatherData = () => {
   const forecastData = weatherData.forecast.forecastday;
 
   return (
+    
+    
     <>
-      <div className="location-name">{weatherData.location.name}<br></br> Weather</div>
+      
       {forecastData.map((forecast, index) => {
         const date = new Date(forecast.date);
         const day = date.getDate();
