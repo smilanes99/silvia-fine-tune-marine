@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomePage.scss";
 import leftWaves from "../../assets/images/bottomLeftWaves2.svg";
-import rightWaves from "../../assets/images/topRightWaves2.svg";
+import rightWaves from "../../assets/images/topRightWaves3.svg";
 import boatLines from '../../assets/images/heroboat.svg';
 
 function HomePage() {

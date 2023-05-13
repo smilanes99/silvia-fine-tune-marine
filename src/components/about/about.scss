@@ -4,9 +4,10 @@
 @use "../../styles/partials/global" as *;
 
 .cartoon {
-  max-width: 100%;
+  max-width: 45%;
   margin-top: -100px;
   margin-left: -200px;
+ @include desktop-small {max-width: 30%;}
 }
 
 .bubble {
@@ -35,8 +36,10 @@
   background-image: url("../../assets/images/rightTree.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  @include tablet-portrait {flex-direction: column;}
-  @include mobile {background-repeat: repeat;}
+  padding: 30px;
+  @include desktop-small {flex-direction: column;
+    background-repeat: repeat;}
+  
 
   .image-container {
     display: flex;

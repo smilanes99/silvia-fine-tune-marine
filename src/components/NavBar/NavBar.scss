@@ -1,21 +1,26 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
-// @use "../../styles/partials/typography" as *;
+@use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $white;
-  color: $dark-blue;
-  height: 5rem;
+  background-color: $dark-blue;
+  color: $white;
+  // height: 5rem;
   padding: 2.25rem 1.25rem 1.25rem 1.25rem;
-  font-size: 1.875rem;
-  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
-  @include tablet-portrait {padding: 0.25rem 1.25rem 0.25rem 1.25rem;}
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  @include tablet-portrait {
+    padding: 0.25rem 1.25rem 0.25rem 1.25rem;
+  }
 }
 
+.nav-title {
+  font-size: 80px;
+  @include tablet-landscape {font-size: 40px;}
+}
 .nav-right {
   display: flex;
   align-items: center;
@@ -28,16 +33,18 @@ nav {
   color: $white;
   font-size: 2rem;
   font-weight: 700;
-  padding: .625rem;
-  border-radius: .625rem;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
   margin-right: 1.875rem;
   background-color: $light-green;
-  @include mobile {font-size: 1rem;
+  @include mobile {
+    font-size: 1rem;
     padding: 0.3rem;
-  font-weight: 500;}
+    font-weight: 500;
+  }
 
   &:hover {
-    background-color:#2ab7756a ;
+    background-color: #2ab7756a;
     border-left: 2px solid $white;
     border-right: 2px solid $white;
     border-top: 2px solid $white;
@@ -50,7 +57,6 @@ nav {
 .wrapper {
   display: inline-flex;
   list-style: none;
-  
 }
 .wrapper .icon-facebook {
   position: relative;
@@ -70,9 +76,11 @@ nav {
   background-image: url(../../assets/icons/icons8-facebook-50.png);
   background-repeat: no-repeat;
   background-size: cover;
-  @include mobile {width: 20px;
+  @include mobile {
+    width: 20px;
     height: 20px;
-    margin: 0;}
+    margin: 0;
+  }
 }
 .wrapper .icon-instagram {
   position: relative;
@@ -92,9 +100,11 @@ nav {
   background-image: url(../../assets/icons/icons8-instagram-50.png);
   background-repeat: no-repeat;
   background-size: cover;
-  @include mobile {width: 20px;
+  @include mobile {
+    width: 20px;
     height: 20px;
-    margin: 0;}
+    margin: 0;
+  }
 }
 
 .wrapper .tooltip {

@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   font-family: 'SourceSans';
-  @include mobile {background-repeat: repeat;}
+  @include desktop-small {background-repeat: repeat;}
 
 }
 .contact-section-text {
@@ -89,6 +89,7 @@
   @include mobile {width: 20px;
     height: 20px;
   margin: 0;}
+ 
 }
 
 .wrapper .tooltip {
@@ -158,6 +159,7 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 .location-title {
   font-size: 20px;

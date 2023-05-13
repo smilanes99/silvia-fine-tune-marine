@@ -109,8 +109,8 @@ li {
 
 .corner-image {
   position: absolute;
-  height: 40vh; 
-  @include tablet-portrait {  height:35vh;}
+  height: 30vh; 
+  @include mobile {height: 20vh;}
 }
 
 .top-right {
