@@ -27,6 +27,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    @include mobile-large {margin-bottom: 450px;}
   }
 
   &__section {
@@ -55,12 +56,14 @@
       margin-bottom: 120px;
       margin-left: 0px;
     }
-    @include mobile {
+    @include mobile-large {
       margin-left: 0;
-      padding-right: 80px;
+      padding-right: 150px;
       padding-left: 10px;
+      margin-bottom: -580px;
     }
   }
+  .hero-title {font-weight: 500;}
 
   &__boat--img {
     width: 100%;
@@ -76,6 +79,7 @@
     align-items: center;
     width: 100%;
     contain: content;
+    
 
     &--img1 {
       align-self: flex-start;
@@ -85,8 +89,9 @@
       @include tablet-portrait {
         width: 40rem;
       }
-      @include mobile {
+      @include mobile-large {
         width: 20rem;
+        display:none;
       }
     }
     &--img2 {
@@ -100,7 +105,7 @@
         margin-bottom: -400px;
       }
       @include mobile {
-        width: 20rem;
+        width: 30rem;
       }
     }
   }

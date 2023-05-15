@@ -2,6 +2,10 @@
 @use "./mixins" as *;
 @use "../partials/typography" as *;
 
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "SourceSans", sans-serif;
   background-color: $white;
@@ -11,7 +15,7 @@ h1 {
   margin-bottom: 1rem;
   font-size: 102px;
   color: $main-blue;
-  font-weight: 300;
+  font-weight: 400;
   @include tablet-portrait {
     font-size: 90px;
   }
@@ -22,6 +26,6 @@ h1 {
 
 h2 {
   font-family: "SourceSans", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
 }

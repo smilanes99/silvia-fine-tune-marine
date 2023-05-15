@@ -26,7 +26,7 @@ const Weather = () => {
   };
 
   useEffect(() => {
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=33130&days=5`)
+    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=33130&days=6`)
     .then(response => response.json())
     .then(jsonData => {
       setWeatherData(jsonData);
@@ -41,7 +41,7 @@ const renderWeatherData = () => {
     return <p>Loading weather data...</p>;
   }
 
-  const forecastData = weatherData.forecast.forecastday;
+  const forecastData = weatherData.forecast.forecastday.slice(1);
 
   return (
     

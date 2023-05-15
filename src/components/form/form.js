@@ -17,7 +17,7 @@ const Form = () => {
         </div>
       ) : (
         <>
-          <h1>Fill out this form to be contacted</h1>
+          <h1 className='form-header'>Fill out this form to be contacted</h1>
           <p className="smaller-text">*For a quicker response please reach out directly through text or Instagram.</p>
           <form onSubmit={handleSubmit}>
             <input type="text" placeholder="Name" required />
