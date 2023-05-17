@@ -5,8 +5,8 @@ import gear from '../../assets/images/CogAndWrench.svg'
 import light from '../../assets/images/BlueLightBulb.svg'
 import cables from '../../assets/images/BlueWires.svg'
 import speakers from '../../assets/images/BlueSpeakerIcon.svg'
-import topRightImage from '../../assets/images/topRightWaves.svg';
-import bottomLeftImage from '../../assets/images/bottomLeftWaves.svg';
+import topRightImage from '../../assets/images/topRightWaves.png';
+import bottomLeftImage from '../../assets/images/bottomLeftWaves.png';
 
 
 

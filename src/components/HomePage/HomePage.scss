@@ -27,7 +27,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    @include mobile-large {margin-bottom: 450px;}
+    @include mobile-large {
+      margin-bottom: 450px;
+    }
   }
 
   &__section {
@@ -45,6 +47,7 @@
   }
   .hero-subtitle {
     color: $dark-blue;
+    font-size: 20px;
   }
   .hero-text {
     font-size: 20px;
@@ -58,12 +61,14 @@
     }
     @include mobile-large {
       margin-left: 0;
-      padding-right: 150px;
-      padding-left: 10px;
+      margin-right: 100px;
+      padding-left: 30px;
       margin-bottom: -580px;
     }
   }
-  .hero-title {font-weight: 500;}
+  .hero-title {
+    font-weight: 500;
+  }
 
   &__boat--img {
     width: 100%;
@@ -79,7 +84,6 @@
     align-items: center;
     width: 100%;
     contain: content;
-    
 
     &--img1 {
       align-self: flex-start;
@@ -91,7 +95,7 @@
       }
       @include mobile-large {
         width: 20rem;
-        display:none;
+        display: none;
       }
     }
     &--img2 {

@@ -19,8 +19,8 @@ nav {
 .nav-title {
   font-size: 80px;
   @include tablet-landscape {font-size: 40px;}
-  @include mobile-large {font-size: 30px;}
-  @include mobile {font-size: 25px;}
+  @include mobile-large {font-size: 25px;}
+  @include mobile {font-size: 20px;}
 }
 .nav-right {
   display: flex;

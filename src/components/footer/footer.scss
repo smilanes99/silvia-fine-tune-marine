@@ -1,0 +1,11 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/global" as *;
+
+
+footer {color: $white;
+background-color: $dark-blue;
+display: flex;
+text-align: center;
+justify-content: center;}

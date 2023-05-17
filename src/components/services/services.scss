@@ -17,8 +17,10 @@
   color: $main-blue;
   width: 100%;
   padding-top: 50px;
-  @include mobile {font-size: 50px;}
-  
+  @include mobile {
+    padding-top: 80px;
+    font-size: 50px;
+  }
 }
 .services-sub-title {
   display: flex;
@@ -30,8 +32,9 @@
   color: white;
   align-items: center;
   width: 100%;
-  @include mobile {margin-top: 30px;}
-  
+  @include mobile {
+    margin-top: 30px;
+  }
 }
 
 ul {
@@ -46,13 +49,17 @@ li {
 }
 .top-row-cards {
   display: flex;
-  @include tablet-landscape {flex-direction: column;}
+  @include tablet-landscape {
+    flex-direction: column;
+  }
 }
 .bottom-row-cards {
   display: flex;
   justify-content: center;
-  @include tablet-landscape{flex-direction: column;
-    padding-bottom: 80px;}
+  @include tablet-landscape {
+    flex-direction: column;
+    padding-bottom: 80px;
+  }
 }
 .card {
   position: relative;
@@ -62,17 +69,18 @@ li {
   transform-style: preserve-3d;
   transition: all 0.8s linear;
   border-radius: 30px;
-  
-  
 
   &:hover {
     transform: rotateY(180deg);
     box-shadow: -5px 5px 15px -blue;
   }
-  @include tablet-landscape {width:300px;
-  height: 250px;}
-  @include desktop-small {width:320px}
- 
+  @include tablet-landscape {
+    width: 300px;
+    height: 250px;
+  }
+  @include desktop-small {
+    width: 320px;
+  }
 }
 
 .card-front,
@@ -103,14 +111,18 @@ li {
   padding: 20px;
   padding-top: 100px;
   font-size: 24px;
-  @include tablet-landscape {padding-top: 0;}
+  @include tablet-landscape {
+    padding-top: 0;
+  }
 }
-
 
 .corner-image {
   position: absolute;
-  height: 30vh; 
-  @include mobile {height: 20vh;}
+  height: 30vh;
+  @include mobile-large {height: 20vh;}
+  @include mobile {
+    height: 15vh;
+  }
 }
 
 .top-right {
@@ -122,9 +134,3 @@ li {
   bottom: 0;
   left: 0;
 }
-
-
-
-
-
-

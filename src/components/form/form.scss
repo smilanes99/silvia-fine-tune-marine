@@ -3,67 +3,104 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
 
-
 .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: 'SourceSans';
-  
-    h1 {
-      font-size: 35px;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-  
-    .smaller-text {
-      font-size: 17px;
-      color: $white;
-      margin-bottom: 20px;
-    }
-  
-    form {
-      width: 100%;
-  
-      input, textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid $light-green;
-        border-radius: 4px;
-  
-        &:focus {
-          border:3px solid $light-green;
-          outline: none;
-        }
-      }
-  
-      button {
-        padding: 10px 20px;
-        border: none;
-        border-radius: 10px;
-        background-color: $light-green;
-        color: #fff;
-        cursor: pointer;
-        font-size: 24px;
-        transition: background-color 0.3s;
-  
-        &:hover {
-          background-color: #2ab7756a ;
-        }
-      }
-    }
-  
-    .thank-you-note {
-      font-size: 20px;
-      text-align: center;
-      color: $white;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 90%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-family: "SourceSans";
+  background-color: $white;
+  border-radius: 20px;
+  @include desktop-small{width: 90%;}
+  @include mobile-large {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 90%;
   }
 
-  .form-header {color: $light-green;}
+  h1 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .smaller-text {
+    font-size: 17px;
+    color: $main-blue;
+    margin-bottom: 20px;
+  }
+
+  form {
+    width: 100%;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid $light-green;
+      border-radius: 4px;
+
+      &:focus {
+        border: 3px solid $light-green;
+        outline: none;
+      }
+    }
+}}
+
+
+  .thank-you-note {
+    font-size: 25px;
+    text-align: center;
+    color: $light-green;
+    display: flex;
+    align-items: center;
+  }
+
+.form-header {
+  color: $light-green;
+}
+.form-div {
+    @include mobile-large {justify-content: center;}
+    display: flex;
+}
+
+.icon-instagram-form {
+    position: relative;
+    border-radius: 40%;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+   background-color: $light-green;
+}
+.icon-instagram-form:hover {
+    visibility: visible;
+    pointer-events: auto;
+    transform: scale(1.1);
+  }
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: $light-green;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+    
+  button:hover {
+    border-color: #fff;
+    transform: scale(1.1);
+  }
+

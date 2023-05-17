@@ -3,53 +3,56 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
 
-
 .weather-box {
-    color: $white;
-    border-radius: 8px;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-   @include desktop-small {flex-direction: column;}
+  color: $white;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  @include desktop-small {
+    flex-direction: column;
+  }
+}
 
+.forecast {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 3px solid $white;
+  padding: 10px;
+  width: 15vw;
+  @include desktop-small {
+    width: 30vw;
   }
-  
- 
-  .forecast {
-    margin-bottom: 20px;
-    border-radius: 20px;
-    border: 3px solid $white;
-    padding: 10px;
-    width: 15vw;
-    @include desktop-small {width: 30vw;}
-    @include mobile {width: 100%}
-  }
-  
-  .forecast > div {
-    margin-bottom: 5px;
-  }
-
-  
-  table {
-    margin-top: 20px;
+  @include mobile {
     width: 100%;
-    border-collapse: collapse;
-  
-    td {
-      padding: 8px;
-      text-align: center;
-  
-      &:first-child {
-        text-align: left;
-      }
-  
-      &:last-child {
-        text-align: right;
-      }
+  }
+}
+
+.forecast > div {
+  margin-bottom: 5px;
+}
+
+table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+
+  td {
+    padding: 8px;
+    text-align: center;
+
+    &:first-child {
+      text-align: left;
+    }
+
+    &:last-child {
+      text-align: right;
     }
   }
-  .date {font-size: 30px;
-    font-weight: 500;
-    border-bottom: 5px solid $light-green;}
+}
+.date {
+  font-size: 30px;
+  font-weight: 500;
+}

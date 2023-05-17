@@ -1,7 +1,7 @@
 
 import React from 'react';
-import cartoon from '../../assets/images/logo-version (4).png';
-import bubble from '../../assets/images/speechBubble.svg'
+import cartoon from '../../assets/images/cartoonandbubble.svg';
+
 import './about.scss';
 
 
@@ -12,7 +12,6 @@ function About() {
 return (
     <div className="about-container">
       <div className="image-container">
-      <img className='bubble' src={bubble} alt="speech bubble" />
         <img className='cartoon' src={cartoon} alt="Cartoon Man" />
       </div>
       <div className="info-container">
