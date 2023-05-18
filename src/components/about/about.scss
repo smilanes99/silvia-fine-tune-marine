@@ -17,7 +17,7 @@
   background-image: url("../../assets/images/rightTree.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 30px;
+  padding: 1.875rem;
   @include desktop-small {
     flex-direction: column;
     background-repeat: repeat;
@@ -33,28 +33,28 @@
   }
 
   .info-container {
-    padding-right: 80px;
-    max-width: 700px;
+    padding-right: 5rem;
+    max-width: 43.75rem;
     font-weight: 500;
     @include mobile {
-      padding: 20px;
+      padding: 1.25rem;
     }
 
     h2 {
-      font-size: 40px;
-      margin-bottom: 20px;
+      font-size: 2.5rem;
+      margin-bottom: 1.25rem;
       font-weight: 700;
     }
 
     p {
       line-height: 1.5;
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
     }
   }
 
 .about-text {
-  font-size: 30px;
+  font-size: 1.875rem;
   @include mobile-large {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }

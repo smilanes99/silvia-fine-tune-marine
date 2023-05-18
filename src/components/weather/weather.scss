@@ -5,8 +5,8 @@
 
 .weather-box {
   color: $white;
-  border-radius: 8px;
-  padding: 20px;
+  border-radius: .5rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,30 +17,30 @@
 }
 
 .forecast {
-  margin-bottom: 20px;
-  border-radius: 20px;
-  border: 3px solid $white;
-  padding: 10px;
+  margin-bottom: 1.25rem;
+  border-radius: 1.25rem;
+  border: .1875rem solid $white;
+  padding: .625rem;
   width: 15vw;
   @include desktop-small {
     width: 30vw;
   }
   @include mobile {
-    width: 100%;
+    width: 50%;
   }
 }
 
 .forecast > div {
-  margin-bottom: 5px;
+  margin-bottom: .3125rem;
 }
 
 table {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   width: 100%;
   border-collapse: collapse;
 
   td {
-    padding: 8px;
+    padding: .5rem;
     text-align: center;
 
     &:first-child {
@@ -53,6 +53,6 @@ table {
   }
 }
 .date {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 500;
 }

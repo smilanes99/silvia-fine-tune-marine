@@ -28,7 +28,7 @@
     align-items: center;
     width: 100%;
     @include mobile-large {
-      margin-bottom: 450px;
+      margin-bottom: 28.125rem;
     }
   }
 
@@ -47,23 +47,23 @@
   }
   .hero-subtitle {
     color: $dark-blue;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .hero-text {
-    font-size: 20px;
-    padding: 16px 0px;
-    margin-bottom: 120px;
-    margin-left: 250px;
+    font-size: 1.25rem;
+    padding: 1rem 0rem;
+    margin-bottom: 7.5rem;
+    margin-left: 15.625rem;
     @include tablet-portrait {
       padding: 0;
-      margin-bottom: 120px;
-      margin-left: 0px;
+      margin-bottom: 7.5rem;
+      margin-left: 0rem;
     }
     @include mobile-large {
       margin-left: 0;
-      margin-right: 100px;
-      padding-left: 30px;
-      margin-bottom: -580px;
+      margin-right: 6.25rem;
+      padding-left: 1.875rem;
+      margin-bottom: -36.25rem;
     }
   }
   .hero-title {
@@ -87,29 +87,29 @@
 
     &--img1 {
       align-self: flex-start;
-      width: 48rem;
-      margin-top: 200px;
-      margin-left: -50px;
+      width: 768px;
+      margin-top: 12.5rem;
+      margin-left: -3.125rem;
       @include tablet-portrait {
-        width: 40rem;
+        width: 640px;
       }
       @include mobile-large {
-        width: 20rem;
+        width: 320px;
         display: none;
       }
     }
     &--img2 {
       align-self: flex-end;
-      width: 30rem;
-      margin-bottom: -400px;
-      margin-top: -1px;
+      width: 480px;
+      margin-bottom: -25rem;
+      margin-top: -0.0625rem;
       @include tablet-portrait {
         align-self: flex-end;
-        width: 30rem;
-        margin-bottom: -400px;
+        width: 480px;
+        margin-bottom: -25rem;
       }
       @include mobile {
-        width: 30rem;
+        width: 480px;
       }
     }
   }
