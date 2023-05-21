@@ -31,7 +31,7 @@ function Contact() {
         </div>
         <div className='address-area'>
         <img className="icon-car" src={car} alt='car icon'/>
-  <p className='address-text'>We come to you!<br></br> Serving Miami-Fort Lauderdale Area</p>
+  <p className='address-text'>I come to you!<br></br> Serving Miami-Fort Lauderdale Area</p>
   </div>
 
        </div>
