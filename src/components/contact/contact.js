@@ -13,7 +13,7 @@ function Contact() {
     <div id="contact">
         <div className='contact-page'>
         
-           <h2 className='contact-section-title'>Contact Us!</h2>
+           <h2 className='contact-section-title'>Contact Me!</h2>
    
         <div className='contact-section'>
         <div className='contact-section-text'>
@@ -27,7 +27,7 @@ function Contact() {
        </ul>
           <div className='phone-number-area'>
         <img className="icon-phone" src={phone} alt='phone icon'/>
-        <p className='phone-number'>+1(305)-916-9321 </p>
+        <p className='phone-number'> +1(305)-916-9321 </p>
         </div>
         <div className='address-area'>
         <img className="icon-car" src={car} alt='car icon'/>
