@@ -1,11 +1,10 @@
 import React from 'react';
 import './contact.scss';
-import Weather from '../weather/weather';
 import Form from '../form/form';
 import instagram from "../../assets/icons/instagram-icon.png"
 import phone from "../../assets/icons/phone-icon.png"
 import car from "../../assets/icons/car-icon.png"
-import cloud from '../../assets/images/weathericons.png';
+
 
 function Contact() {
 
@@ -40,16 +39,9 @@ function Contact() {
        </div>
        </div>
 
-       <div className='weather-text-icon'>
-       <img className="weather-icon" src={cloud} alt='cloud with sun and boat'/>
-       <div className='weather-title'>Plan Ahead for Smooth Sailing or Repairs!</div>
-       <div className='location-title'> Miami Forecast</div>
-       </div>
-       <div className='weather-div'>
-       <Weather/>
        </div>
       </div>
-      </div>
+   
       );
     }
     
